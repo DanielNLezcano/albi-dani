@@ -4,6 +4,7 @@ import "../styles/global.css";
 import Section from "../components/Section.astro";
 import Button from "../components/Button.astro";
 import Circle from "../components/Circle.astro";
+import Icon from "../components/Icon.astro";
 const targetDate = new Date(new Date().getFullYear(), 10, 21); // November is month 10 (0-based)
 const now = new Date();
 
@@ -30,7 +31,7 @@ const days = (totalDays % 7) + 1;
         <div class="text-2xl">Nos casamos!</div>
     </Section>
     <Section direction="col" classes="bg-[#ECDDCA] p-8">
-        <img src="/icono-frase.svg" alt="Logo" class="w-32 h-32 mb-5" />
+        <Icon src="/icono-frase.svg"/>
         <div class="text-3xl">LLEGÓ EL GRAN DÍA</div>
         <p>
             "Andábamos sin buscarnos, pero sabiendo que andábamos para
@@ -44,7 +45,7 @@ const days = (totalDays % 7) + 1;
             <Circle left={weeks} times="Semanas" />
             <Circle left={days} times="Días" />
         </div>
-        <img src="/icono-nuestraboda.svg" alt="Logo" class="w-32 h-32 mb-5" />
+        <Icon src="/icono-nuestraboda.svg"/>
         <div class="text-3xl">NUESTRA BODA</div>
         <div class="text-2xl text-[#d28d66]">Festejo</div>
         <p>21 de noviembre de 2025
@@ -61,10 +62,10 @@ const days = (totalDays % 7) + 1;
         <div class="text-3xl">R S V P</div>
         <p>Esperamos que puedas acompañarnos. ¡Confirmanos tu asistencia!</p>
         <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9">Confirmar asistencia</Button>
-        <img src="/icono-calendar.svg" alt="Calendar" class="w-32 h-32 mb-5" />
+        <Icon src="/icono-calendar.svg"/>
         <p>¡Agendá la fecha en tu calendario!</p>
         <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9">Confirmar asistencia</Button>
-        <img src="/icono-dresscode.svg" alt="Calendar" class="w-32 h-32 mb-5" />
+        <Icon src="/icono-dresscode.svg"/>
 
         <div class="text-3xl">D R E S S C O D E:</div>
         <p>Formal elegante.</p>
@@ -75,7 +76,7 @@ const days = (totalDays % 7) + 1;
         <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9">Confirmar asistencia</Button>
     </Section>
     <Section direction="col" classes="bg-white p-8">
-        <img src="/icono-instagram.svg" alt="Logo" class="w-32 h-32 mb-5" />
+        <Icon src="/icono-instagram.svg"/>
         <div class="text-2xl">@LuisyMery</div>
         <p>¡Preparate para nuestro casamiento!</p>
         <p>
@@ -89,7 +90,7 @@ const days = (totalDays % 7) + 1;
         <p>Cada historia de amor es diferente, ¡pero la nuestra es única!</p>
     </Section>
     <Section direction="col" classes="bg-[#ECDDCA] p-8">
-        <img src="/icono-regalo.svg" alt="Logo" class="w-32 h-32 mb-5" />
+        <Icon src="/icono-regalo.svg"/>
         <p>
             ¡El mejor regalo es tu presencia!
             <br />
