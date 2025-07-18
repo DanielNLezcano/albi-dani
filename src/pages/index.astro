@@ -1,16 +1,106 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
+import Section from "../components/Section.astro";
+const date = new Date();
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Albi y Dani">
+    <Section
+        direction="col"
+        classes="h-screen"
+    >
+        <div class="text-7xl">Albi y Dani</div>
+        <div class="text-2xl">Nos casamos!</div>
+    </Section>
+    <Section direction="col" classes="bg-[#ECDDCA] p-8">
+        <img src="/icono-frase.svg" alt="Logo" class="w-32 h-32 mb-5" />
+        <div class="text-3xl">LLEGÓ EL GRAN DÍA</div>
+        <p>
+            "Andábamos sin buscarnos, pero sabiendo que andábamos para
+            encontrarnos."
+        </p>
+        <p>Julio Cortázar</p>
+    </Section>
+    <Section direction="col" classes="bg-white p-8">
+        <img src="/icono-frase.svg" alt="Logo" class="w-32 h-32 mb-5" />
+        <div class="text-3xl">NUESTRA BODA</div>
+    </Section>
+    <Section direction="col" classes="bg-[#ECDDCA] p-8">
+        <div class="text-3xl">R S V P</div>
+        <p>
+            Esperamos que puedas acompañarnos. ¡Confirmanos tu asistencia!
+        </p>
+        <button class="bg-amber-500" style="background-color: rgb(210, 141, 102); color: white">
+            <a href="https://forms.gle/3d1b7Z2f8g5j4k6u9" class="">Confirmar asistencia</a>
+        </button>
+        <img src="/icono-calendar.svg" alt="Calendar" class="w-32 h-32 mb-5" />
+        <p>
+            ¡Agendá la fecha en tu calendario!
+        </p>
+        <button class="bg-amber-500" style="background-color: rgb(210, 141, 102); color: white">
+            <a href="https://forms.gle/3d1b7Z2f8g5j4k6u9" class="">Confirmar asistencia</a>
+        </button>
+        <img src="/icono-dresscode.svg" alt="Calendar" class="w-32 h-32 mb-5" />
+
+        <div class="text-3xl">D R E S S  C O D E:</div>
+        <p>
+            Formal elegante.</p>
+            <p>
+Nuestro casamiento será al aire libre, sugerimos no usar taco y llevar abrigo.
+        </p>
+        <button class="bg-amber-500" style="background-color: rgb(210, 141, 102); color: white">
+            <a href="https://forms.gle/3d1b7Z2f8g5j4k6u9" class="">Confirmar asistencia</a>
+        </button>
+    </Section>
+    <Section direction="col" classes="bg-white p-8">
+        <img src="/icono-instagram.svg" alt="Logo" class="w-32 h-32 mb-5" />
+        <div class="text-2xl">
+            @LuisyMery
+        </div >
+        <p>
+            ¡Preparate para nuestro casamiento!</p>
+            <p>
+Ya podés seguirnos en nuestra cuenta para ver todas las novedades del casamiento y etiquetarnos en tus fotos y videos.
+        </p>
+        <button class="bg-amber-500" style="background-color: rgb(210, 141, 102); color: white">
+            <a href="https://forms.gle/3d1b7Z2f8g5j4k6u9" class="">Ver en instagram</a>
+        </button>
+        <br />
+        <div class="text-3xl">NOSOTROS:</div>
+        <div>♥</div>
+        <p>Cada historia de amor es diferente, ¡pero la nuestra es única!</p>
+        <button class="bg-amber-500" style="background-color: rgb(210, 141, 102); color: white">
+            <a href="https://forms.gle/3d1b7Z2f8g5j4k6u9" class="">Confirmar asistencia</a>
+        </button>
+    </Section>
+    <Section direction="col"  classes="bg-[#ECDDCA] p-8">
+        <img src="/icono-regalo.svg" alt="Logo" class="w-32 h-32 mb-5" />
+        <p>¡El mejor regalo es tu presencia!
+            <br />
+            Si deseas realizarnos un regalo...</p>
+        <button class="bg-amber-500" style="background-color: rgb(210, 141, 102); color: white">
+            <a href="https://forms.gle/3d1b7Z2f8g5j4k6u9" class="">Ver mas</a>
+        </button>
+    </Section>
+    <Section direction="col"  classes="bg-white p-8">
+        <div class="text-3xl">F I E S T A !</div>
+        <p>¿Qué canciones no pueden faltar en la fiesta?
+            <br />
+¡Queremos crear una lista inolvidable!
+            </p>
+        <button class="bg-amber-500" style="background-color: rgb(210, 141, 102); color: white">
+            <a href="https://forms.gle/3d1b7Z2f8g5j4k6u9" class="">Sugerir cancion</a>
+        </button>
+    </Section>
+    <Section direction="col"  classes="bg-[#D28D66] p-8">
+        <div class="text-3x1">I N F O   Ú T I L</div>
+        <p>Te dejamos sugerencias de alojamientos y traslados para que aproveches ese fin de semana al máximo.
+
+
+            </p>
+        <button class="bg-amber-500" style="background-color: rgb(210, 141, 102); color: white">
+            <a href="https://forms.gle/3d1b7Z2f8g5j4k6u9" class="">Ver mas</a>
+        </button>
+    </Section>
+</Layout>

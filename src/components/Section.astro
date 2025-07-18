@@ -1,0 +1,6 @@
+---
+const { slotsNumber, height, style, direction, classes } = Astro.props;
+---
+<div class=`w-full flex items-center flex-col gap-5 justify-center ${classes}` style={style}>
+    <slot />
+</div>
