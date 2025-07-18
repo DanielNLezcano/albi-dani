@@ -1,6 +1,6 @@
 ---
-const { slotsNumber, height, style, direction, classes } = Astro.props;
+const { style, classes, width } = Astro.props;
 ---
-<div class=`w-full flex items-center flex-col gap-5 justify-center ${classes}` style={style}>
+<div class=`w-${width || 'full'} flex items-center flex-col gap-5 justify-center py-20 ${classes}` style={style}>
     <slot />
 </div>

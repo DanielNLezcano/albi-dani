@@ -7,6 +7,7 @@ import Circle from "../components/Circle.astro";
 import Icon from "../components/Icon.astro";
 import Heading from "../components/Heading.astro";
 import Paragraph from "../components/Paragraph.astro";
+import Galeria from "../components/Galeria.astro";
 const targetDate = new Date(new Date().getFullYear(), 10, 21); // November is month 10 (0-based)
 const now = new Date();
 
@@ -28,11 +29,11 @@ const days = (totalDays % 7) + 1;
 ---
 
 <Layout title="Albi y Dani">
-    <Section direction="col" classes="h-screen">
+    <Section classes="h-screen">
         <Heading size="text-7xl">Albi y Dani</Heading>
         <Heading size="text-2xl">Nos casamos!</Heading>
     </Section>
-    <Section direction="col" classes="bg-[#ECDDCA] p-8">
+    <Section classes="bg-[#ECDDCA] p-8">
         <Icon src="/icono-frase.svg" />
         <Heading>LLEGÓ EL GRAN DÍA</Heading>
         <Paragraph>
@@ -41,7 +42,7 @@ const days = (totalDays % 7) + 1;
         </Paragraph>
         <Paragraph>Julio Cortázar</Paragraph>
     </Section>
-    <Section direction="col" classes="bg-white p-8">
+    <Section classes="bg-white p-8">
         <div id="countdown" class="flex gap-4 justify-center">
             <Circle left=`${months}` times="Meses" />
             <Circle left={weeks} times="Semanas" />
@@ -61,7 +62,7 @@ const days = (totalDays % 7) + 1;
         </Paragraph>
         <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9">Como llegar</Button>
     </Section>
-    <Section direction="col" classes="bg-[#ECDDCA] p-8">
+    <Section classes="bg-[#ECDDCA] p-8">
         <div class="text-3xl">R S V P</div>
         <Paragraph
             >Esperamos que puedas acompañarnos. ¡Confirmanos tu asistencia!</Paragraph
@@ -71,24 +72,20 @@ const days = (totalDays % 7) + 1;
         >
         <Icon src="/icono-calendar.svg" />
         <Paragraph>¡Agendá la fecha en tu calendario!</Paragraph>
-        <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9"
-            >Confirmar asistencia</Button
+        <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9">Agendar evento</Button
         >
         <Icon src="/icono-dresscode.svg" />
 
         <div class="text-3xl">D R E S S C O D E:</div>
-        <Paragraph>Formal elegante.</Paragraph>
         <Paragraph>
-            Nuestro casamiento será al aire libre, sugerimos no usar taco y
-            llevar abrigo.
+            Formal elegante.<br />
+            Nuestro casamiento será al aire libre, sugerimos no usar taco y llevar
+            abrigo.
         </Paragraph>
-        <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9"
-            >Confirmar asistencia</Button
-        >
     </Section>
-    <Section direction="col" classes="bg-white p-8">
+    <Section classes="bg-white p-8">
         <Icon src="/icono-instagram.svg" />
-        <div class="text-2xl">@LuisyMery</div>
+        <div class="text-2xl">@av__819</div>
         <Paragraph>¡Preparate para nuestro casamiento!</Paragraph>
         <Paragraph>
             Ya podés seguirnos en nuestra cuenta para ver todas las novedades
@@ -98,13 +95,15 @@ const days = (totalDays % 7) + 1;
             >Ver en instagram</Button
         >
         <br />
-        <div class="text-3xl">NOSOTROS:</div>
-        <div>♥</div>
+        <div  class="text-2xl">
+            NOSOTROS ♥:
+        </div>
         <Paragraph
             >Cada historia de amor es diferente, ¡pero la nuestra es única!</Paragraph
         >
+        <Galeria />
     </Section>
-    <Section direction="col" classes="bg-[#ECDDCA] p-8">
+    <Section classes="bg-[#ECDDCA] p-8">
         <Icon src="/icono-regalo.svg" />
         <Paragraph>
             ¡El mejor regalo es tu presencia!
@@ -113,7 +112,7 @@ const days = (totalDays % 7) + 1;
         </Paragraph>
         <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9">Ver mas</Button>
     </Section>
-    <Section direction="col" classes="bg-white p-8">
+    <Section classes="bg-white p-8 my-10 mx-40" width="1">
         <div class="text-3xl">F I E S T A !</div>
         <Paragraph>
             ¿Qué canciones no pueden faltar en la fiesta?
@@ -124,8 +123,8 @@ const days = (totalDays % 7) + 1;
             >Sugerir cancion</Button
         >
     </Section>
-    <Section direction="col" classes="bg-[#D28D66] p-8">
-        <div class="text-3x1">I N F O Ú T I L</div>
+    <Section classes="bg-[#D28D66] p-8">
+        <div class="text-3xl">I N F O Ú T I L</div>
         <Paragraph>
             Te dejamos sugerencias de alojamientos y traslados para que
             aproveches ese fin de semana al máximo.
