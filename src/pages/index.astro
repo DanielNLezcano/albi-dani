@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
 import Section from "../components/Section.astro";
+import Button from "../components/Button.astro";
 import Circle from "../components/Circle.astro";
 const targetDate = new Date(new Date().getFullYear(), 10, 21); // November is month 10 (0-based)
 const now = new Date();
@@ -45,28 +46,24 @@ const days = (totalDays % 7) + 1;
         </div>
         <img src="/icono-nuestraboda.svg" alt="Logo" class="w-32 h-32 mb-5" />
         <div class="text-3xl">NUESTRA BODA</div>
+        <div class="text-2xl text-[#d28d66]">Festejo</div>
+        <p>21 de noviembre de 2025
+            <br />
+            18:00 hs
+            <br />
+            Terranova Eventos
+            <br />
+            San Jeronimo Sud, Santa Fe
+        </p>
+        <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9">Como llegar</Button>
     </Section>
     <Section direction="col" classes="bg-[#ECDDCA] p-8">
         <div class="text-3xl">R S V P</div>
         <p>Esperamos que puedas acompañarnos. ¡Confirmanos tu asistencia!</p>
-        <button
-            class="bg-amber-500"
-            style="background-color: rgb(210, 141, 102); color: white"
-        >
-            <a href="https://forms.gle/3d1b7Z2f8g5j4k6u9" class=""
-                >Confirmar asistencia</a
-            >
-        </button>
+        <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9">Confirmar asistencia</Button>
         <img src="/icono-calendar.svg" alt="Calendar" class="w-32 h-32 mb-5" />
         <p>¡Agendá la fecha en tu calendario!</p>
-        <button
-            class="bg-amber-500"
-            style="background-color: rgb(210, 141, 102); color: white"
-        >
-            <a href="https://forms.gle/3d1b7Z2f8g5j4k6u9" class=""
-                >Confirmar asistencia</a
-            >
-        </button>
+        <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9">Confirmar asistencia</Button>
         <img src="/icono-dresscode.svg" alt="Calendar" class="w-32 h-32 mb-5" />
 
         <div class="text-3xl">D R E S S C O D E:</div>
@@ -75,14 +72,7 @@ const days = (totalDays % 7) + 1;
             Nuestro casamiento será al aire libre, sugerimos no usar taco y
             llevar abrigo.
         </p>
-        <button
-            class="bg-amber-500"
-            style="background-color: rgb(210, 141, 102); color: white"
-        >
-            <a href="https://forms.gle/3d1b7Z2f8g5j4k6u9" class=""
-                >Confirmar asistencia</a
-            >
-        </button>
+        <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9">Confirmar asistencia</Button>
     </Section>
     <Section direction="col" classes="bg-white p-8">
         <img src="/icono-instagram.svg" alt="Logo" class="w-32 h-32 mb-5" />
@@ -92,14 +82,7 @@ const days = (totalDays % 7) + 1;
             Ya podés seguirnos en nuestra cuenta para ver todas las novedades
             del casamiento y etiquetarnos en tus fotos y videos.
         </p>
-        <button
-            class="bg-amber-500"
-            style="background-color: rgb(210, 141, 102); color: white"
-        >
-            <a href="https://forms.gle/3d1b7Z2f8g5j4k6u9" class=""
-                >Ver en instagram</a
-            >
-        </button>
+        <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9">Ver en instagram</Button>
         <br />
         <div class="text-3xl">NOSOTROS:</div>
         <div>♥</div>
@@ -112,12 +95,7 @@ const days = (totalDays % 7) + 1;
             <br />
             Si deseas realizarnos un regalo...
         </p>
-        <button
-            class="bg-amber-500"
-            style="background-color: rgb(210, 141, 102); color: white"
-        >
-            <a href="https://forms.gle/3d1b7Z2f8g5j4k6u9" class="">Ver mas</a>
-        </button>
+        <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9">Ver mas</Button>
     </Section>
     <Section direction="col" classes="bg-white p-8">
         <div class="text-3xl">F I E S T A !</div>
@@ -126,14 +104,7 @@ const days = (totalDays % 7) + 1;
             <br />
             ¡Queremos crear una lista inolvidable!
         </p>
-        <button
-            class="bg-amber-500"
-            style="background-color: rgb(210, 141, 102); color: white"
-        >
-            <a href="https://forms.gle/3d1b7Z2f8g5j4k6u9" class=""
-                >Sugerir cancion</a
-            >
-        </button>
+        <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9">Sugerir cancion</Button>
     </Section>
     <Section direction="col" classes="bg-[#D28D66] p-8">
         <div class="text-3x1">I N F O Ú T I L</div>
@@ -141,11 +112,6 @@ const days = (totalDays % 7) + 1;
             Te dejamos sugerencias de alojamientos y traslados para que
             aproveches ese fin de semana al máximo.
         </p>
-        <button
-            class="bg-amber-500"
-            style="background-color: rgb(210, 141, 102); color: white"
-        >
-            <a href="https://forms.gle/3d1b7Z2f8g5j4k6u9" class="">Ver mas</a>
-        </button>
+        <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9">Ver mas</Button>
     </Section>
 </Layout>
