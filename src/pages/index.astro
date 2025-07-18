@@ -5,6 +5,8 @@ import Section from "../components/Section.astro";
 import Button from "../components/Button.astro";
 import Circle from "../components/Circle.astro";
 import Icon from "../components/Icon.astro";
+import Heading from "../components/Heading.astro";
+import Paragraph from "../components/Paragraph.astro";
 const targetDate = new Date(new Date().getFullYear(), 10, 21); // November is month 10 (0-based)
 const now = new Date();
 
@@ -27,17 +29,17 @@ const days = (totalDays % 7) + 1;
 
 <Layout title="Albi y Dani">
     <Section direction="col" classes="h-screen">
-        <div class="text-7xl">Albi y Dani</div>
-        <div class="text-2xl">Nos casamos!</div>
+        <Heading size="text-7xl">Albi y Dani</Heading>
+        <Heading size="text-2xl">Nos casamos!</Heading>
     </Section>
     <Section direction="col" classes="bg-[#ECDDCA] p-8">
-        <Icon src="/icono-frase.svg"/>
-        <div class="text-3xl">LLEGÓ EL GRAN DÍA</div>
-        <p>
+        <Icon src="/icono-frase.svg" />
+        <Heading>LLEGÓ EL GRAN DÍA</Heading>
+        <Paragraph>
             "Andábamos sin buscarnos, pero sabiendo que andábamos para
             encontrarnos."
-        </p>
-        <p>Julio Cortázar</p>
+        </Paragraph>
+        <Paragraph>Julio Cortázar</Paragraph>
     </Section>
     <Section direction="col" classes="bg-white p-8">
         <div id="countdown" class="flex gap-4 justify-center">
@@ -45,74 +47,89 @@ const days = (totalDays % 7) + 1;
             <Circle left={weeks} times="Semanas" />
             <Circle left={days} times="Días" />
         </div>
-        <Icon src="/icono-nuestraboda.svg"/>
+        <Icon src="/icono-nuestraboda.svg" />
         <div class="text-3xl">NUESTRA BODA</div>
         <div class="text-2xl text-[#d28d66]">Festejo</div>
-        <p>21 de noviembre de 2025
+        <Paragraph>
+            21 de noviembre de 2025
             <br />
             18:00 hs
             <br />
             Terranova Eventos
             <br />
             San Jeronimo Sud, Santa Fe
-        </p>
+        </Paragraph>
         <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9">Como llegar</Button>
     </Section>
     <Section direction="col" classes="bg-[#ECDDCA] p-8">
         <div class="text-3xl">R S V P</div>
-        <p>Esperamos que puedas acompañarnos. ¡Confirmanos tu asistencia!</p>
-        <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9">Confirmar asistencia</Button>
-        <Icon src="/icono-calendar.svg"/>
-        <p>¡Agendá la fecha en tu calendario!</p>
-        <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9">Confirmar asistencia</Button>
-        <Icon src="/icono-dresscode.svg"/>
+        <Paragraph
+            >Esperamos que puedas acompañarnos. ¡Confirmanos tu asistencia!</Paragraph
+        >
+        <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9"
+            >Confirmar asistencia</Button
+        >
+        <Icon src="/icono-calendar.svg" />
+        <Paragraph>¡Agendá la fecha en tu calendario!</Paragraph>
+        <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9"
+            >Confirmar asistencia</Button
+        >
+        <Icon src="/icono-dresscode.svg" />
 
         <div class="text-3xl">D R E S S C O D E:</div>
-        <p>Formal elegante.</p>
-        <p>
+        <Paragraph>Formal elegante.</Paragraph>
+        <Paragraph>
             Nuestro casamiento será al aire libre, sugerimos no usar taco y
             llevar abrigo.
-        </p>
-        <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9">Confirmar asistencia</Button>
+        </Paragraph>
+        <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9"
+            >Confirmar asistencia</Button
+        >
     </Section>
     <Section direction="col" classes="bg-white p-8">
-        <Icon src="/icono-instagram.svg"/>
+        <Icon src="/icono-instagram.svg" />
         <div class="text-2xl">@LuisyMery</div>
-        <p>¡Preparate para nuestro casamiento!</p>
-        <p>
+        <Paragraph>¡Preparate para nuestro casamiento!</Paragraph>
+        <Paragraph>
             Ya podés seguirnos en nuestra cuenta para ver todas las novedades
             del casamiento y etiquetarnos en tus fotos y videos.
-        </p>
-        <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9">Ver en instagram</Button>
+        </Paragraph>
+        <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9"
+            >Ver en instagram</Button
+        >
         <br />
         <div class="text-3xl">NOSOTROS:</div>
         <div>♥</div>
-        <p>Cada historia de amor es diferente, ¡pero la nuestra es única!</p>
+        <Paragraph
+            >Cada historia de amor es diferente, ¡pero la nuestra es única!</Paragraph
+        >
     </Section>
     <Section direction="col" classes="bg-[#ECDDCA] p-8">
-        <Icon src="/icono-regalo.svg"/>
-        <p>
+        <Icon src="/icono-regalo.svg" />
+        <Paragraph>
             ¡El mejor regalo es tu presencia!
             <br />
             Si deseas realizarnos un regalo...
-        </p>
+        </Paragraph>
         <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9">Ver mas</Button>
     </Section>
     <Section direction="col" classes="bg-white p-8">
         <div class="text-3xl">F I E S T A !</div>
-        <p>
+        <Paragraph>
             ¿Qué canciones no pueden faltar en la fiesta?
             <br />
             ¡Queremos crear una lista inolvidable!
-        </p>
-        <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9">Sugerir cancion</Button>
+        </Paragraph>
+        <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9"
+            >Sugerir cancion</Button
+        >
     </Section>
     <Section direction="col" classes="bg-[#D28D66] p-8">
         <div class="text-3x1">I N F O Ú T I L</div>
-        <p>
+        <Paragraph>
             Te dejamos sugerencias de alojamientos y traslados para que
             aproveches ese fin de semana al máximo.
-        </p>
+        </Paragraph>
         <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9">Ver mas</Button>
     </Section>
 </Layout>
