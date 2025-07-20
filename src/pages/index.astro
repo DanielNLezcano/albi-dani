@@ -49,8 +49,8 @@ const days = (totalDays % 7) + 1;
             <Circle left={days} times="Días" />
         </div>
         <Icon src="/icono-nuestraboda.svg" />
-        <Heading>NUESTRA BODA</Heading>
-        <Heading size='text-[20px]' not_uppercase>Festejo</Heading>
+        <Heading size="text-3xl">NUESTRA BODA</Heading>
+        <Heading size="text-2xl" not_uppercase>Festejo</Heading>
         <Paragraph>
             21 de noviembre de 2025
             <br />
@@ -63,10 +63,10 @@ const days = (totalDays % 7) + 1;
         <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9">Como llegar</Button>
     </Section>
     <Section classes="bg-[#ECDDCA] p-8">
-        <div class="text-3xl">R S V P</div>
-        <Paragraph
-            >Esperamos que puedas acompañarnos. ¡Confirmanos tu asistencia!</Paragraph
-        >
+        <Heading size="text-3xl">R S V P</Heading>
+        <Paragraph>
+            Esperamos que puedas acompañarnos. ¡Confirmanos tu asistencia!
+        </Paragraph>
         <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9"
             >Confirmar asistencia</Button
         >
@@ -76,16 +76,14 @@ const days = (totalDays % 7) + 1;
         >
         <Icon src="/icono-dresscode.svg" />
 
-        <div class="text-3xl">D R E S S C O D E:</div>
+        <Heading size="text-3xl">D R E S S C O D E:</Heading>
         <Paragraph>
-            Formal elegante.<br />
-            Nuestro casamiento será al aire libre, sugerimos no usar taco y llevar
-            abrigo.
+            Formal elegante.
         </Paragraph>
     </Section>
     <Section classes="bg-white p-8">
         <Icon src="/icono-instagram.svg" />
-        <div class="text-2xl">@av__819</div>
+        <Heading size="text-2xl">@av__819</Heading>
         <Paragraph>¡Preparate para nuestro casamiento!</Paragraph>
         <Paragraph>
             Ya podés seguirnos en nuestra cuenta para ver todas las novedades
@@ -95,12 +93,10 @@ const days = (totalDays % 7) + 1;
             >Ver en instagram</Button
         >
         <br />
-        <div  class="text-2xl">
-            NOSOTROS ♥:
-        </div>
-        <Paragraph
-            >Cada historia de amor es diferente, ¡pero la nuestra es única!</Paragraph
-        >
+        <Heading size="text-2xl">NOSOTROS ♥</Heading>
+        <Paragraph>
+            Cada historia de amor es diferente, ¡pero la nuestra es única!
+        </Paragraph>
         <Galeria />
     </Section>
     <Section classes="bg-[#ECDDCA] p-8">
