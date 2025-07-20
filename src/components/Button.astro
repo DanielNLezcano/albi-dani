@@ -1,8 +1,8 @@
 ---
-const { url } = Astro.props;
+const { url, blank } = Astro.props;
 ---
 <button
     class="bg-[#d28d66] text-white px-6 py-2 rounded-none hover:bg-[#dbae98] transition-colors duration-300"
 >
-    <a href={url}><slot /></a>
+    <a href={url} target={blank ? "_blank" : "_self"}><slot /></a>
 </button>
