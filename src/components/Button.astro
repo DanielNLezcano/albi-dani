@@ -3,7 +3,7 @@ const { url, blank, modalId } = Astro.props;
 ---
 
 <button
-    class="bg-[#ce3d2d] text-white px-6 py-2 rounded-none hover:bg-[#d4857c] transition-colors duration-300"
+    class="bg-[#ce3d2d] text-white px-6 py-2 rounded-none hover:bg-[#d4857c] transition-colors duration-300 cursor-pointer"
     onclick={modalId ? `document.getElementById('${modalId}').classList.remove('hidden')` : undefined}
 >
     {url ? (
