@@ -8,6 +8,7 @@ import Icon from "../components/Icon.astro";
 import Heading from "../components/Heading.astro";
 import Paragraph from "../components/Paragraph.astro";
 import Galeria from "../components/Galeria.astro";
+import Nombre from "../components/Nombre.astro";
 const targetDate = new Date(new Date().getFullYear(), 10, 21); // November is month 10 (0-based)
 const now = new Date();
 
@@ -30,7 +31,7 @@ const days = (totalDays % 7) + 1;
 
 <Layout title="Albi y Dani">
     <Section classes="h-screen">
-        <img src="/nombre.png" />
+        <Nombre />
     </Section>
     <Section classes="bg-[#ECDDCA] p-8">
         <Icon src="/icono-frase.svg" />
