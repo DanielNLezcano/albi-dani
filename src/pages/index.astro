@@ -9,6 +9,7 @@ import Heading from "../components/Heading.astro";
 import Paragraph from "../components/Paragraph.astro";
 import Galeria from "../components/Galeria.astro";
 import Nombre from "../components/Nombre.astro";
+import Popup from "../components/Popup.astro";
 const targetDate = new Date(new Date().getFullYear(), 10, 21); // November is month 10 (0-based)
 const now = new Date();
 
@@ -37,10 +38,9 @@ const days = (totalDays % 7) + 1;
         <Icon src="/icono-frase.svg" />
         <Heading size="text-3xl">LLEGÓ EL GRAN DÍA</Heading>
         <Paragraph>
-            "Andábamos sin buscarnos, pero sabiendo que andábamos para
-            encontrarnos."
+            "El amor ... todo lo sufre, todo lo cree, todo lo espera, todo lo soporta."
         </Paragraph>
-        <Paragraph>Julio Cortázar</Paragraph>
+        <Paragraph>1 Corintios 13:7 - Dios</Paragraph>
     </Section>
     <Section classes="bg-white p-8">
         <div id="countdown" class="flex gap-4 justify-center">
@@ -105,8 +105,10 @@ const days = (totalDays % 7) + 1;
             ¡El mejor regalo es tu presencia!
             <br />
             Si deseas realizarnos un regalo...
+            <br />
+            ¡Podes ayudarnos con nuestra luna de miel!
         </Paragraph>
-        <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9">Ver mas</Button>
+    <Button modalId="modal-regalo">Ver más</Button>
     </Section>
     <Section classes="bg-white p-8 my-10 max-w-3/4 m-auto" width="1">
         <Heading size="text-3xl">F I E S T A !</Heading>
@@ -115,7 +117,7 @@ const days = (totalDays % 7) + 1;
             <br />
             ¡Queremos crear una lista inolvidable!
         </Paragraph>
-        <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9"
+        <Button url="https://open.spotify.com/playlist/5QBYqibZxncvqWmh8dGNi8?si=c_GGw8A1QAaZ2frqrhlPJQ&pi=P4JGq1ryROm-6&pt=0a4075f2237a8b594f06d7d3325f15f9"
             >Sugerir cancion</Button
         >
     </Section>
@@ -123,9 +125,11 @@ const days = (totalDays % 7) + 1;
         <Heading size="text-3xl">INFO ÚTIL</Heading>
         <div class="text-3xl"></div>
         <Paragraph>
-            Te dejamos sugerencias de alojamientos y traslados para que
-            aproveches ese fin de semana al máximo.
+            Si venis en vehiculo, ¡avisanos! Quizas puedas compartir auto con otros invitados.
+            <br />
+            Si necesitas transporte, ¡avisanos! Podemos ayudarte a coordinar.
         </Paragraph>
         <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9">Ver mas</Button>
     </Section>
+    <Popup />
 </Layout>

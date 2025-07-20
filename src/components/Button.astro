@@ -1,8 +1,14 @@
 ---
-const { url, blank } = Astro.props;
+const { url, blank, modalId } = Astro.props;
 ---
+
 <button
-    class="bg-[#d28d66] text-white px-6 py-2 rounded-none hover:bg-[#dbae98] transition-colors duration-300"
+    class="bg-[#ce3d2d] text-white px-6 py-2 rounded-none hover:bg-[#d4857c] transition-colors duration-300"
+    onclick={modalId ? `document.getElementById('${modalId}').classList.remove('hidden')` : undefined}
 >
-    <a href={url} target={blank ? "_blank" : "_self"}><slot /></a>
+    {url ? (
+        <a href={url} target={blank ? "_blank" : "_self"}><slot /></a>
+    ) : (
+        <slot />
+    )}
 </button>
