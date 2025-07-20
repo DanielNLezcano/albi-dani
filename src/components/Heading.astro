@@ -1,4 +1,17 @@
 ---
-const { size } = Astro.props;
+const { size, not_uppercase, font } = Astro.props;
 ---
-<div class=`${size || 'text-3xl'} box-border text-[#333333] block font-[400] font-['Libre_Baskerville',serif] text-[25px] h-[30px] leading-[30px] tracking-[0.625em] my-[20px] mx-[20px] text-center uppercase select-none`><slot /></div>
+
+<div
+    class=`${size || 'text-[25px]'} box-border text-[#333333] block font-['Cormorant SC',serif] h-[30px] leading-[30px] my-[20px] mx-[20px] text-center select-none ${not_uppercase ? '' : 'uppercase' }`
+    style=`font-family: ${font || "'Cormorant SC', serif"}; font-weight: 600; font-style: normal;`
+>
+    <slot />
+</div>
+
+<style>
+    div {
+        font-weight: 600;
+        font-style: normal;
+    }
+</style>
