@@ -10,6 +10,7 @@ import Paragraph from "../components/Paragraph.astro";
 import Galeria from "../components/Galeria.astro";
 import Nombre from "../components/Nombre.astro";
 import Popup from "../components/Popup.astro";
+import Brand from "../components/Brand.astro";
 const targetDate = new Date(new Date().getFullYear(), 10, 21); // November is month 10 (0-based)
 const now = new Date();
 
@@ -88,7 +89,7 @@ const days = (totalDays % 7) + 1;
             <br />
             <br />
             <Button blank url="https://pin.it/1NRUjucfw"
-                ><i class="fa fa-pinterest" style="font-size:1.5rem"></i> Inspiracion</Button
+                ><Brand icon="pinterest" /> Inspiracion</Button
             >
         </Paragraph>
     </Section>
@@ -100,11 +101,20 @@ const days = (totalDays % 7) + 1;
             y videos.
         </Paragraph>
         <div class="flex gap-4 justify-center">
-            <Button url="https://www.instagram.com/alba_venezia?igsh=dXc4aWFmYTJxcnRj">
-                <i class="fa-brands fa-instagram"></i> Albi
+            <Button
+                url="https://www.instagram.com/alba_venezia?igsh=dXc4aWFmYTJxcnRj"
+                class="flex items-center gap-2"
+            >
+                <span class="flex items-center h-6">
+                    <Brand icon="instagram" />&nbsp;Albi
+                </span>
             </Button>
-            <Button url="https://www.instagram.com/dani.lezcano7?igsh=OXFkeHIxYzkya2Qx">
-                <i class="fa-brands fa-instagram"></i> Dani
+            <Button
+                url="https://www.instagram.com/dani.lezcano7?igsh=OXFkeHIxYzkya2Qx"
+            >
+                <span class="flex items-center h-6">
+                    <Brand icon="instagram" />&nbsp;Dani
+                </span>
             </Button>
         </div>
         <br />
@@ -112,7 +122,8 @@ const days = (totalDays % 7) + 1;
         <Paragraph>
             Todo empezo como un chiste alla por 2022.
             <br />
-            Albi le "propuso" (en chiste) a Dani casamiento para hacer reir a todo el grupo...
+            Albi le "propuso" (en chiste) a Dani casamiento para hacer reir a todo
+            el grupo...
             <br />
             En 2024 ese chiste paso a una propuesta real de Dani 🐝
         </Paragraph>
@@ -127,7 +138,7 @@ const days = (totalDays % 7) + 1;
             <br />
             ¡Podes ayudarnos con nuestra luna de miel!
         </Paragraph>
-        <Button modalId="modal-regalo">Ver más</Button>
+        <Button modalId="modal-regalo">🍯 Luna de miel</Button>
     </Section>
     <Section classes="bg-white p-8 my-10 max-w-3/4 m-auto" width="1">
         <Heading size="text-3xl">F I E S T A !</Heading>
@@ -136,14 +147,16 @@ const days = (totalDays % 7) + 1;
             <br />
             ¡Queremos crear una lista inolvidable!
         </Paragraph>
-        <Button
+            <Button
             url="https://open.spotify.com/playlist/5QBYqibZxncvqWmh8dGNi8?si=c_GGw8A1QAaZ2frqrhlPJQ&pi=P4JGq1ryROm-6&pt=0a4075f2237a8b594f06d7d3325f15f9"
-            >Sugerir cancion</Button
-        >
+            >
+                <span class="flex items-center h-6">
+                    <Brand icon="spotify" />&nbsp;Sugerir cancion
+                </span>
+            </Button>
     </Section>
     <Section classes="bg-[#D28D66] p-8">
         <Heading size="text-3xl">INFO ÚTIL</Heading>
-        <div class="text-3xl"></div>
         <Paragraph>
             Si venis en vehiculo, ¡avisanos! Quizas puedas compartir auto con
             otros invitados.
