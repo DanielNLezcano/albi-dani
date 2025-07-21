@@ -39,7 +39,7 @@ const days = (totalDays % 7) + 1;
         <Icon src="/icono-frase.svg" />
         <Heading size="text-3xl">LLEGÓ EL GRAN DÍA</Heading>
         <Paragraph>
-            "El amor ... todo lo sufre, todo lo cree, todo lo espera, todo lo
+            "El amor... todo lo sufre, todo lo cree, todo lo espera, todo lo
             soporta."
         </Paragraph>
         <Paragraph>1 Corintios 13:7 - Dios</Paragraph>
@@ -60,25 +60,32 @@ const days = (totalDays % 7) + 1;
             <br />
             Terranova Eventos
             <br />
-            San Jeronimo Sud, Santa Fe
+            San Jerónimo Sud, Santa Fe
         </Paragraph>
-        <Button blank url="https://maps.app.goo.gl/gre4rGnTn4shUST58"
-            >Como llegar</Button
-        >
+        <Button blank url="https://maps.app.goo.gl/gre4rGnTn4shUST58">
+            <span class="flex items-center h-6">
+                <Brand icon="map-location-dot" from="solid" />
+                <span style="font-size: 1.5rem;">🗺️📍</span> Cómo llegar
+            </span>
+        </Button>
     </Section>
     <Section classes="bg-[#ECDDCA] p-8">
         <Heading size="text-3xl">R S V P</Heading>
         <Paragraph>
             Esperamos que puedas acompañarnos. ¡Confirmanos tu asistencia!
         </Paragraph>
-        <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9"
-            >Confirmar asistencia</Button
-        >
+        <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9">
+            <span class="flex items-center h-6">
+                <Brand icon="check" from="solid" />&nbsp; Confirmar asistencia
+            </span>
+        </Button>
         <Icon src="/icono-calendar.svg" />
         <Paragraph>¡Agendá la fecha en tu calendario!</Paragraph>
-        <Button blank url="https://calendar.app.google/WteyEA2RjsMkBPGe8"
-            >Agendar evento</Button
-        >
+        <Button blank url="https://calendar.app.google/WteyEA2RjsMkBPGe8">
+            <span class="flex items-center h-6">
+                <Brand icon="calendar-days" from="solid" />&nbsp;Agendar evento
+            </span>
+        </Button>
         <Icon src="/icono-dresscode.svg" />
 
         <Heading size="text-3xl">D R E S S C O D E:</Heading>
@@ -88,9 +95,11 @@ const days = (totalDays % 7) + 1;
             ¡Te dejamos un tablero para que puedas inspirarte!
             <br />
             <br />
-            <Button blank url="https://pin.it/1NRUjucfw"
-                ><Brand icon="pinterest" /> Inspiracion</Button
-            >
+            <Button blank url="https://pin.it/1NRUjucfw">
+                <span class="flex items-center h-6">
+                    <Brand icon="pinterest" />&nbsp;Inspiracion
+                </span>
+            </Button>
         </Paragraph>
     </Section>
     <Section classes="bg-white p-8">
@@ -138,7 +147,11 @@ const days = (totalDays % 7) + 1;
             <br />
             ¡Podes ayudarnos con nuestra luna de miel!
         </Paragraph>
-        <Button modalId="modal-regalo">🍯 Luna de miel</Button>
+        <Button modalId="modal-regalo">
+            <span class="flex items-center h-6">
+                <span style="font-size: 1.5rem;">🍯</span> Luna de miel
+            </span>
+        </Button>
     </Section>
     <Section classes="bg-white p-8 my-10 max-w-3/4 m-auto" width="1">
         <Heading size="text-3xl">F I E S T A !</Heading>
@@ -147,13 +160,13 @@ const days = (totalDays % 7) + 1;
             <br />
             ¡Queremos crear una lista inolvidable!
         </Paragraph>
-            <Button
+        <Button
             url="https://open.spotify.com/playlist/5QBYqibZxncvqWmh8dGNi8?si=c_GGw8A1QAaZ2frqrhlPJQ&pi=P4JGq1ryROm-6&pt=0a4075f2237a8b594f06d7d3325f15f9"
-            >
-                <span class="flex items-center h-6">
-                    <Brand icon="spotify" />&nbsp;Sugerir cancion
-                </span>
-            </Button>
+        >
+            <span class="flex items-center h-6">
+                <Brand icon="spotify" />&nbsp;Sugerir cancion
+            </span>
+        </Button>
     </Section>
     <Section classes="bg-[#D28D66] p-8">
         <Heading size="text-3xl">INFO ÚTIL</Heading>
