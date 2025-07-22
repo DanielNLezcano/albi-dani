@@ -27,7 +27,7 @@ temp.setMonth(temp.getMonth() + months);
 const msLeft = targetDate.getTime() - temp.getTime();
 const totalDays = Math.floor(msLeft / (1000 * 60 * 60 * 24));
 
-const weeks = Math.floor(totalDays / 7);
+const weeks = Math.floor(totalDays / 7) < 0 ? 0 : Math.floor(totalDays / 7) ;
 const days = (totalDays % 7) + 1;
 ---
 
@@ -64,8 +64,7 @@ const days = (totalDays % 7) + 1;
         </Paragraph>
         <Button blank url="https://maps.app.goo.gl/gre4rGnTn4shUST58">
             <span class="flex items-center h-6">
-                <Brand icon="map-location-dot" from="solid" />
-                <span style="font-size: 1.5rem;">🗺️📍</span> Cómo llegar
+                <Brand icon="map-location-dot" from="solid" />&nbsp;Cómo llegar
             </span>
         </Button>
     </Section>
@@ -74,7 +73,7 @@ const days = (totalDays % 7) + 1;
         <Paragraph>
             Esperamos que puedas acompañarnos. ¡Confirmanos tu asistencia!
         </Paragraph>
-        <Button url="https://forms.gle/3d1b7Z2f8g5j4k6u9">
+        <Button url="https://forms.gle/oLtLP6HEztZCzuiYA" blank>
             <span class="flex items-center h-6">
                 <Brand icon="check" from="solid" />&nbsp; Confirmar asistencia
             </span>
@@ -111,14 +110,14 @@ const days = (totalDays % 7) + 1;
                 class="flex items-center gap-2"
             >
                 <span class="flex items-center h-6">
-                    <Brand icon="instagram" />&nbsp;Albi
+                    <Brand icon="instagram" blank />&nbsp;Albi
                 </span>
             </Button>
             <Button
                 url="https://www.instagram.com/dani.lezcano7?igsh=OXFkeHIxYzkya2Qx"
             >
                 <span class="flex items-center h-6">
-                    <Brand icon="instagram" />&nbsp;Dani
+                    <Brand icon="instagram" blank />&nbsp;Dani
                 </span>
             </Button>
         </div>
@@ -160,19 +159,19 @@ const days = (totalDays % 7) + 1;
             url="https://open.spotify.com/playlist/5QBYqibZxncvqWmh8dGNi8?si=c_GGw8A1QAaZ2frqrhlPJQ&pi=P4JGq1ryROm-6&pt=0a4075f2237a8b594f06d7d3325f15f9"
         >
             <span class="flex items-center h-6">
-                <Brand icon="spotify" />&nbsp;Sugerir canción
+                <Brand icon="spotify" blank />&nbsp;Sugerir canción
             </span>
         </Button>
     </Section>
     <Section classes="bg-[#D28D66] p-8">
         <Heading size="text-3xl">INFO ÚTIL</Heading>
         <Paragraph>
-            Si venís en vehículo, ¡avisános! Quizás puedas compartir auto con
+            Si venís en vehículo, ¡avísanos! Quizás puedas compartir auto con
             otros invitados.
             <br />
-            Si necesitás transporte, ¡avisános! Podemos ayudarte a coordinar.
+            Si necesitás transporte, ¡avísanos! Podemos ayudarte a coordinar.
             <br />
-            Si necesitás hospedaje, ¡avisános! Quizás podamos ayudarte en eso.
+            Si necesitás hospedaje, ¡avísanos! Quizás podamos ayudarte en eso.
         </Paragraph>
     </Section>
     <Popup />
